@@ -25,9 +25,7 @@ env/
 
 # --- Generated Images/Plots ---
 # You don't want to clutter your history with every map you generate.
-*.png
-*.jpg
-*.jpeg
+
 
 # --- IDE Settings ---
 .vscode/
