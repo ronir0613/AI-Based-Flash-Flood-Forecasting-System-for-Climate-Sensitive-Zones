@@ -1,0 +1,35 @@
+# --- Python Basics ---
+__pycache__/
+*.pyc
+
+# --- Virtual Environment ---
+# This is crucial. Never commit your venv.
+floodenv/
+venv/
+env/
+
+# --- Large Data Sets (GIS & CSV) ---
+# GitHub has a file size limit (100MB). 
+# These should stay local.
+*.tif
+*.gpkg
+
+# --- Trained Models & Scalers ---
+# These are binary files that change often or are large.
+# Only commit these if you intend to share the pre-trained weights.
+*.h5
+*.pkl
+*.json
+# If you have config JSONs you want to keep, remove *.json
+# and add specific ignore rules like: xgboost_flood_model.json
+
+# --- Generated Images/Plots ---
+# You don't want to clutter your history with every map you generate.
+*.png
+*.jpg
+*.jpeg
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+.DS_Store
